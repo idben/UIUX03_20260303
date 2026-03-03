@@ -1,14 +1,21 @@
 $fontColor: #f56161
 $fontColor2: #09e7a5
 
+@mixin sizing()
+  width: 200px
+  height: 100px
+
 .block1
   color: $fontColor
+  @include sizing
   .block2
     color: $fontColor2
+    @include sizing
 
 @for $i from 1 through 10
-  .fz-#{$i}
-    font-size: #{$i}px
+  $size: 10 + $i * 2
+  .fz-#{$size}
+    font-size: #{$size}px
 // 用 10 圈的 for 迴圈, 變數 $i
 // 產生 .fz- 開頭的類別
 // 類別內容是 font-size, 值是迴圈變數 $i
