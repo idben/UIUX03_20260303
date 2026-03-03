@@ -1,16 +1,18 @@
 $fontColor: #f56161
 $fontColor2: #09e7a5
 
-@mixin sizing()
+@mixin sizing($bgc1)
   width: 200px
   height: 100px
+  background-color: $bgc1
+// 類似 js 的 function + return
 
 .block1
   color: $fontColor
-  @include sizing
+  @include sizing(#960d0d)
   .block2
     color: $fontColor2
-    @include sizing
+    @include sizing(#918181)
 
 @for $i from 1 through 10
   $size: 10 + $i * 2

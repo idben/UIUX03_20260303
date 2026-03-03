@@ -2,11 +2,13 @@
   color: #f56161;
   width: 200px;
   height: 100px;
+  background-color: #960d0d;
 }
 .block1 .block2 {
   color: #09e7a5;
   width: 200px;
   height: 100px;
+  background-color: #918181;
 }
 
 .fz-12 {
