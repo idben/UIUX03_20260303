@@ -1,0 +1,9 @@
+body::after {
+  content: "XS";
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #ec1c1c;
+  font-size: 100px;
+  font-weight: bold;
+}/*# sourceMappingURL=testBreakpoints.css.map */
